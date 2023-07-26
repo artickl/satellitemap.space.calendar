@@ -1,2 +1,3 @@
 # some output files
 tmp/
+satellites/__pycache__/
