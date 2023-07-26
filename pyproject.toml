@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "satellitemap-space-calendar"
+name = "satellites"
 version = "0.0.1"
 description = "Create a list of events with Satelite passing above"
 authors = ["artickl <artem.zavyalov@gmail.com>"]
 readme = "README.md"
-packages = [{include = "satellitemap"}]
+packages = [{include = "satellites"}]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.13"
@@ -17,7 +17,12 @@ matplotlib = "^3.7.2"
 seaborn = "^0.12.2"
 sklearn = "^0.0.post7"
 scipy = "^1.11.1"
+py-staticmaps = "^0.4.0"
+imageio = "^2.31.1"
+pillow = "9.5.0"
 
+[tool.poetry.scripts]
+satellites = "satellites.satellites:main"
 
 [build-system]
 requires = ["poetry-core"]
