@@ -1,3 +1,5 @@
 # some output files
 tmp/
-satellites/__pycache__/
+*__pycache__/
+*.bsp
+.vscode/
